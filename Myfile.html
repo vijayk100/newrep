@@ -1,0 +1,41 @@
+
+
+
+<html>
+<head>
+
+  <script>
+
+ //  function init() {
+ //      var name = "Mozilla"; // name is a local variable created by init
+ //      function displayName() { // displayName() is the inner function, a closure
+ //          alert (name); // displayName() uses variable declared in the parent function
+ //      }
+ //      displayName();
+ //      console.log("call disply");
+ //  }
+ // init();
+ //    console.log("call init");
+
+ function makeFunc() {
+  var name = 'Mozilla';
+  function displayName() {
+    console.log("Test");
+    alert(name);
+  }
+  return displayName;
+  console.log("THis is first call");
+}
+
+ var myFunc = makeFunc();
+myFunc();
+console.log("THis is Second call");
+
+  </script>
+
+   </head>
+
+
+<body>
+</body>
+</html>
